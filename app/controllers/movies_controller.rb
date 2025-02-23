@@ -49,6 +49,6 @@ class MoviesController < ApplicationController
     @m= matching_movies.at(0)
     @m.destroy
 
-    redirect_to("/actors")
+    redirect_to("/movies")
   end
 end
