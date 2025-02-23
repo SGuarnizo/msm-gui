@@ -6,6 +6,36 @@
   Go back
 </a>
 
+<div>
+<a href="/delete_director/<%= @the_director.id %>">
+  Delete
+</a>
+</div>
+
+
+<hr>
+<form action="/update_director/<%= @the_director.id %>" method="post">
+  <div>
+    <label for="update_name">Name</label>
+    <input id="update_name" type="text" name="dupdate_name_param" value="<%= @the_director.name %>">
+  </div>
+  <div>
+    <label for="update_dob">Dob</label>
+    <input id="update_dob" type="date" name="dupdate_dob_param" value="<%= @the_director.dob %>">
+  </div>
+  <div>
+    <label for="update_bio">Bio</label>
+    <input id="update_bio" type="text" name="dupdate_bio_param" value="<%= @the_director.bio %>">
+  </div>
+
+  <div>
+    <label for="update_image">Image</label>
+    <input id="update_image" type="text" name="dupdate_image_param" value="<%= @the_director.image %>">
+  </div>
+
+  <button>Update director</button>
+</form>
+
 <hr>
 
 <dl>
